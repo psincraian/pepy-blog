@@ -6,9 +6,9 @@ categories: pepy.tech
 ---
 I remember when I started my project Climoji, to search emojis from your terminal, I wanted to see how many downloads it had and if it was useful.
 
-The problem is that data was removed from PyPI and it wasn’t easy to get download stats of that project. If you want this data you should query the data in the official download stats repository and it was tedious. Also if you want to add an amazing badge like this (Image 1) it was impossible.
+The problem is that data was removed from PyPI and it wasn’t easy to get download stats of that project. If you want this data you should query the data in the official download stats repository and it was tedious. Also if you want to add an amazing badge like it was impossible.
 
-Then to solve that problem I created pepy.tech. It queries the official data for you and also it generates a badge to insert into your README.md
+Then to solve that problem I created pepy.tech. It queries the official data for you and also it generates a badge to insert into your README.md, like this one: ![Requests Downloads Badge](https://pepy.tech/badge/requests).
 
 Now it is quite popular in the Python community, as a lot of popular libraries use this badge to query data. Some of them are:
 * Requests
