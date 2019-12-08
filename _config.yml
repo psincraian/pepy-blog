@@ -36,7 +36,7 @@ plugins:
 
 jekyll_analytics:
   GoogleAnalytics:
-    id: UA-115993635-1
+    id: UA-115993635-3
     anonymizeIp: true
 # Exclude from processing.
 # The following items will not be processed, by default.
