@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dependency injection in Python with Pinject"
+title: "Dependency Injection in Python with Pinject"
 date: 2019-12-21 15:00:00 +0100
 categories: python patterns
 ---
