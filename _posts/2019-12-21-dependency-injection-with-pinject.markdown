@@ -13,16 +13,18 @@ Dependency Injection is a technique that one object supplies the dependencies of
 # Example without using Dependency Injection
 ```python
 class Mailer:
- def send(self, email: str):
- print(f"Sending mail to {email}")
+    def send(self, email: str):
+        print(f"Sending mail to {email}")
+
 
 class RegisterService:
- def __init__(self):
- self.mailer = Mailer()
+    def __init__(self):
+        self.mailer = Mailer()
+    
+    def register(self, email: str):
+        print(f"Registering user {email}")
+        self.mailer.send(email)
 
- def register(self, email: str):
- print(f"Registering user {email}")
- self.mailer.send(email)
 
 register_service = RegisterService()
 register_service.register("petru@pepy.tech")
@@ -41,17 +43,20 @@ The code above has the following problems:
 ```python
 import pinject
 
+
 class Mailer:
- def send(self, email: str):
- print(f"Sending mail to {email}")
+    def send(self, email: str):
+        print(f"Sending mail to {email}")
+
 
 class RegisterService:
- def __init__(self, mailer: Mailer):
- self.mailer = mailer
+    def __init__(self, mailer: Mailer):
+        self.mailer = mailer
+    
+    def register(self, email: str):
+        print(f"Registering user {email}")
+        self.mailer.send(email)
 
- def register(self, email: str):
- print(f"Registering user {email}")
- self.mailer.send(email)
 
 obj_graph = pinject.new_object_graph()
 register_service = obj_graph.provide(RegisterService)
