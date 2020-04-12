@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "String sorting in Python"
+title:  "Sorting strings in Python"
 date:   2020-04-12 11:00:00 +0100
 categories: python
 ---
