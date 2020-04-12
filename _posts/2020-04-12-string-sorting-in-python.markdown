@@ -43,7 +43,7 @@ In software, there is a character mapping table, so for example: ‘a’ is 97, 
 <b>Note</b><br/>
 The difference between Unicode and UTF-8 is that Unicode defines the mapping between the characters, 'a' is 97, and UTF-8 defines how these values are represented; this can be 0097 or 0x61 in hexadecimal. You can learn more about Unicode and Python <a href="https://docs.python.org/3/howto/unicode.html">here</a>. 
 </p>
-You can view the encoding number with ord and convert the number to the character with chr. Try running the following code to see the values of each character:
+You can view the encoding number with `ord` and convert the number to the character with `chr`. Try running the following code to see the values of each character:
 
 ```python
 [chr(x) for x in range(0, 123)]
