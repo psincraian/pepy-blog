@@ -18,13 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Pepy.tech Blog
-email: psincraian@gmail.com
+title: Petru Rares Sincraian blog
 description: >- # this means to ignore newlines until "baseurl:"
-  Pepy.tech official blog. Find news about pepy.tech, new and interesting Python projects
-  and some Python news.
+  I write about programming, and my personal projects: pepy.tech and remotematch.app.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "blog.pepy.tech" # the base hostname & protocol for your site, e.g. http://example.com
+url: "petru.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: psincraian
 github_username:  psincraian
 
